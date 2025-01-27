@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Portfolio Dikki Prasetyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Tugas Portofolio</span>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="profil.jpg" alt="Foto Profil Dikki Prasetyo" class="profile-pic">
+                    <img src="main.png" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Halo, Saya <span>Dikki</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">Memiliki Keahlian <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Saya Dikki Prasetyo Isnandar, 
+                        Seorang Mahasiswa di Universitas Muhammadiyah Buton. Saya dari program studi Rekayasa Sistem Komputer
+                        dan memiliki pengalaman di bidang elektronik.</p>
+                </div>
+            </div>
+        </section>
+        <div id="skills">
+            <h2>Keterampilan Saya</h2>
+            <ul>
+                <li>Pemrograman: C++, Arduino</li>
+                <li>Arduino Elektronik</li>
+                <li>Pengembangan Web: HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+        <div id="education">
+            <h2>Pendidikan</h2>
+            <p>Universitas Muhammadiyah Buton</p>
+            <p>Program Studi: Rekayasa Sistem Komputer</p>
+            <p>Tahun Masuk: 2023</p>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
